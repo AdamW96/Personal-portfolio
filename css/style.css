@@ -344,10 +344,11 @@ img {
 }
 
 .home {
-  height: 90vh;
+  height: 70vh;
   -ms-flex-line-pack: justify;
       align-content: space-between;
   margin-top: var(--mb-3-0);
+  padding-bottom: 0;
 }
 
 .home__container {
@@ -367,9 +368,9 @@ img {
 .home__content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.08fr 1fr;
-      grid-template-columns: 0.08fr 1fr;
-      grid-template-areas: 'home__social home__data';
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'home__social home__content';
   padding-top: var(--mb-2-5);
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -409,7 +410,8 @@ img {
 .home__data {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: home__data;
+  grid-area: home__content;
+  width: 600px;
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
@@ -531,6 +533,7 @@ img {
 
 .home__scroll .home__scroll-button .home__scroll-mouse {
   font-size: var(--big-font-size);
+  margin-top: var(--mb-3-0);
 }
 
 .home__scroll .home__scroll-button .home_scroll-name {
@@ -542,5 +545,60 @@ img {
 
 .home__scroll .home__scroll-button .home__scroll-arrow {
   font-size: var(--h2-font-size);
+}
+
+.about {
+  padding-top: 1rem;
+}
+
+.about__img {
+  width: 200px;
+  border-radius: 0.5rem;
+  margin-bottom: var(--mb-2-0);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  justify-self: center;
+}
+
+.about__description {
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info-title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.about__info-name {
+  font-size: var(--smaller-font-size);
+  font-family: var(--roboto-font);
+}
+
+.about__info-name,
+.about__info-title {
+  display: block;
+  text-align: center;
+}
+
+.about__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
