@@ -32,6 +32,13 @@
       href="css/argon-design-system.min.css"
       rel="stylesheet"
     />
+
+    <!-- Link Swiper's css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <!-- Personal Styling -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Personal Portfolio</title>
@@ -489,11 +496,7 @@
                     <div class="col-auto text-center flex-column d-sm-flex">
                       <div class="row h-50 qualification__journey">
                         <div class="col">
-                          <span class="qualification__start">
-                            <i
-                              class="uil uil-play qualification__start-icon"
-                            ></i>
-                          </span>
+                          <span class="qualification__start"> Present </span>
                         </div>
                         <div class="col">&nbsp;</div>
                       </div>
@@ -520,7 +523,69 @@
         </div>
       </section>
       <!------------------ Portfolio ---------------------->
-      <section class="portfolio section" id="portfolio"></section>
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">My most recent works</span>
+        <div class="blog-slider__wrp">
+          <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img
+                    src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">26 December 2019</span>
+                  <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                  <div class="blog-slider__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Recusandae voluptate repellendus magni illo ea animi?
+                  </div>
+                  <a href="#" class="blog-slider__button">READ MORE</a>
+                </div>
+              </div>
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img
+                    src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/jason-leung-798979-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">26 December 2019</span>
+                  <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+                  <div class="blog-slider__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Recusandae voluptate repellendus magni illo ea animi?
+                  </div>
+                  <a href="#" class="blog-slider__button">READ MORE</a>
+                </div>
+              </div>
+
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img
+                    src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">26 December 2019</span>
+                  <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                  <div class="blog-slider__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Recusandae voluptate repellendus magni illo ea animi?
+                  </div>
+                  <a href="#" class="blog-slider__button">READ MORE</a>
+                </div>
+              </div>
+            </div>
+            <div class="blog-slider__pagination"></div>
+          </div>
+        </div>
+      </section>
       <!------------------ Contact Me ---------------------->
       <section class="contact section" id="contact"></section>
     </main>
@@ -545,6 +610,9 @@
 
     <!-- Typewriter Css Effect -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!-- Swiper Js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- self script -->
     <script src="js/script.js"></script>
