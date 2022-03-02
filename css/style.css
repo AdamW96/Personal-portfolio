@@ -1241,4 +1241,101 @@ img {
     width: 30px;
   }
 }
+
+.contact_mail {
+  margin-left: var(--mb-3-0);
+  margin-right: var(--mb-1-5);
+  width: 90%;
+}
+
+.contact_mail .contact__container {
+  row-gap: 2rem;
+  width: auto;
+}
+
+.contact_mail .contact__container .contact__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: var(--mb-2-0);
+}
+
+.contact_mail .contact__container .contact__information .contact__icon {
+  font-size: 2rem;
+  color: var(--first-color);
+  margin-right: var(--mb-0-75);
+}
+
+.contact_mail .contact__container .contact__information .contact__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.contact_mail .contact__container .contact__information .contact__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+.contact-form {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-form form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.contact-form form #input-submit {
+  color: white;
+  background: #e74c3c;
+  cursor: pointer;
+}
+
+.contact-form form #input-submit:hover {
+  -webkit-box-shadow: 0 1px 1px rgba(170, 170, 170, 0.6);
+          box-shadow: 0 1px 1px rgba(170, 170, 170, 0.6);
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  border: 5px;
+  outline: 0;
+  padding: 1rem;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: var(--roboto-font);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+  -webkit-box-shadow: 0 0px 2px #e74c3c;
+          box-shadow: 0 0px 2px #e74c3c;
+}
+
+.contact-form form textarea {
+  height: 130px;
+}
+
+.contact-form form .send-message {
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: var(--mb-0-5);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
 /*# sourceMappingURL=style.css.map */
