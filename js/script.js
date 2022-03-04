@@ -91,3 +91,41 @@ var swiper = new Swiper('.blog-slider', {
     clickable: true,
   },
 })
+
+// =================SCROLL UP======================
+function scrollup() {
+  const scrollup = document.getElementById('scroll-up');
+  // when the scroll higer than 560px viewpoint /height, then the scroll of icon should appears
+  // when click the icon, page will jump to the home page
+  if (this.scrollY >= 560) {
+    scrollup.classList.add('show-scroll')
+  }
+  else {
+    scrollup.classList.remove('show-scroll')
+  }
+  // scrollup funciton has been called and working
+}
+
+window.addEventListener('scroll', scrollup)
+
+
+// ================SCORLL SECTION ACTIVE HIGHLIGHT================
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive() {
+  const scrollY = window.pageYOffset
+  sections.forEach(current => {
+
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    let sectionId = current.getAttribute('id')
+    console.log(current, sectionHeight, sectionTop)
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      let test = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+      test.classList.add('active-link')
+    } else {
+      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+    }
+  })
+}
+window.addEventListener('scroll', scrollActive)
