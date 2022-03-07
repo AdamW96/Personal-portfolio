@@ -1223,8 +1223,39 @@ img {
 }
 
 // Medium Screen
-@media screen and (max-width:568px) {
-
+@media screen and (min-width:568px) {
+  .home__content {
+    grid-template-columns: max-content 1fr;
+  }
+  #home {
+    height: max-content;
+  }
+  .section {
+    min-height: 60vh;
+  }
+  .home__data {
+    grid-column: initial;
+  }
+  .about__container,
+  .skill_container,
+  .portfolio__container,
+  .contact__container,
+  .footer__container {
+    grid-template-columns: repeat(1,1fr);
+    padding-left: var(--mb-1-0);
+    padding-right: var(--mb-1-0);
+  }
+  .qualification__section{
+    display: grid;
+    grid-template-columns: 0.85fr;
+    justify-content: center;
+  }
+  .portfolio {
+    padding-bottom: var(--mb-0-25);
+  } 
+  .contact {
+    padding-top: 0;
+  }
 }
 
 // Large Screen
