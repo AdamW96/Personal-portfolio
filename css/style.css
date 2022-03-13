@@ -1601,7 +1601,7 @@ img {
             column-gap: 5rem;
   }
   .about__img {
-    width: 350;
+    width: 500px;
   }
   .about__description {
     text-align: initial;
