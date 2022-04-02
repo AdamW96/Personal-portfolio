@@ -211,8 +211,7 @@ img {
 }
 
 .container {
-  margin-right: var(--mb-1-0);
-  width: 100vw;
+  width: 100%;
 }
 
 .grid {
@@ -228,6 +227,7 @@ img {
   right: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  padding-bottom: 1rem;
 }
 
 .nav {
@@ -548,6 +548,7 @@ img {
 }
 
 .about {
+  margin-top: 5rem;
   padding-top: 1rem;
 }
 
@@ -779,6 +780,7 @@ img {
 }
 
 .qualification__journey {
+  height: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -801,6 +803,17 @@ img {
   padding: 0;
 }
 
+.qualification__journey__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10%;
+  margin-bottom: 0;
+}
+
 .qualification__calendar {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
@@ -813,6 +826,10 @@ img {
 .qulificationLine_title {
   font-size: var(--h2-font-size);
   font-weight: var(--font-medium);
+}
+
+.qualification__title {
+  font-size: var(--h2-font-size);
 }
 
 .qualification__subtitle {
